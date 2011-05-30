@@ -3,5 +3,5 @@
 
 require File.expand_path('../config/application', __FILE__)
 require 'rake'
-<AppName>::Application.send :include, ::Rake::DSL if defined?(::Rake::DSL)
+DemoApp::Application.send :include, ::Rake::DSL if defined?(::Rake::DSL)
 DemoApp::Application.load_tasks
